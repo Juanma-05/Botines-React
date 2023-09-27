@@ -8,23 +8,6 @@ import suelasg from "../../multimedia/suela SG.jpg"
 
 export default function Body(){
     return <>
-        <section className="seccionsecundaria">
-            <div>
-                <ul className="barrasecundaria">
-                <Link className="link" to="/">
-                    <li className="nav">HOME</li>
-                </Link>
-
-                <li className="nav">QUIENES SOMOS</li>
-
-                <Link className="link" to="/GuiaTalles">
-                <li className="nav">GIA DE TALLES</li>
-                </Link>
-
-                </ul>
-            </div>
-
-        </section>
         
         <section id="fondo">
             <div className="suelas">
@@ -45,7 +28,7 @@ export default function Body(){
                 <Link className="link" to="/suelaSG">
                 <div className="suela3"><img class="suelasg" src={suelasg} alt=""/>
                     <h1 className="text">SUELA SG</h1>
-                    <p className="text1">8 tapones de aluminio, idela para forwards</p>
+                    <p className="text1">8 tapones de aluminio, ideal para forwards</p>
                 </div>
                 </Link>
 

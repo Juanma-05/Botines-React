@@ -6,7 +6,7 @@ export function CartElements() {
     const{cart, setCart} = useContext(Datacontext);
 
     const deleteProduct = (id) => {
-        const updatecart= cart.filter( product => product.id !== id )   // renderizar el carrito
+        const updatecart= cart.filter( product => product.id !== id )
         setCart(updatecart);
 
     }

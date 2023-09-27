@@ -31,6 +31,24 @@ export default function Header(){
                 </div>
             </div>
         </section>
+
+        <section className="seccionsecundaria">
+            <div>
+                <ul className="barrasecundaria">
+                <Link className="link" to="/">
+                    <li className="nav">HOME</li>
+                </Link>
+
+                <li className="nav">QUIENES SOMOS</li>
+
+                <Link className="link" to="/GuiaTalles">
+                <li className="nav">GIA DE TALLES</li>
+                </Link>
+
+                </ul>
+            </div>
+
+        </section>
         
     </>
 }

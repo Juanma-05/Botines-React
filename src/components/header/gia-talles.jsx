@@ -6,8 +6,11 @@ import './header.css';
 
 export default function Giatalles (){
     return <>
-        <img className='talles'src={Talles} alt="" />
-        <img className='talles'src={Talles1} alt="" />
+    <div className="talles">
+        <img className='talles1'src={Talles} alt="" />
+        <img className='talles1'src={Talles1} alt="" />
+    </div>
+
 
     </>
     }
