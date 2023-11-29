@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 50px;
+    margin: 40px;
     text-align: center;
     position: relatives;
 }
@@ -30,9 +30,10 @@
 
 
 .card img{
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
 }
+
 
 .card h3{
     margin:10px;

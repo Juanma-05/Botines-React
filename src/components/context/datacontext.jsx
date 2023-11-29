@@ -9,18 +9,18 @@ const Dataprovider =({children}) => {
         // useEffect llama a los productos 
         const [cart, setCart] =useState ([]);
         useEffect(()=>{
-            axios("data.json").then((res)=>setData(res.data))
+            axios.get("http://localhost:3000/api/products/").then((res)=>setData(res.data))
         },[])
 
         const [data2, setData2,] =useState ([]);    
         useEffect(()=>{
-            axios("data2.json").then((res)=>setData2(res.data))
+            axios("http://localhost:3000/api/products1/").then((res)=>setData2(res.data))
         },[])
 
         const [data3, setData3] =useState ([]);    //setdata una funcion que te permite meter un valor dentro de data, ya que nuestro array comienza vacio
         // useEffect llama a los productos 
         useEffect(()=>{
-            axios("data3.json").then((res)=>setData3(res.data))
+            axios("http://localhost:3000/api/products2/").then((res)=>setData3(res.data))
         },[])
 
     return(
