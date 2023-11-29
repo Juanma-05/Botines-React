@@ -10,9 +10,11 @@ export default function Register() {
   const registro = async (e) =>{
     e.preventDefault()
       try {
-        await axios.post("http://localhost:3000/api/users",{email,password})
+        await axios.post("http://localhost:8080/api/register",{email,password})
         alert("cuenta creada exitosamente")
         
+        window.location.href = "http://localhost:3001/sesion";
+
         
       } catch (error) {
         alert("El correo electrónico ya está en uso.")

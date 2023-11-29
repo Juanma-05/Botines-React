@@ -11,15 +11,14 @@ export default function Login() {
   const login = async (e) =>{
     e.preventDefault()
     try {
-      await axios.post("http://localhost:3000/login",{email,password})
+      await axios.post("http://localhost:8080/api/login",{email,password})
       alert("inicio de sesion exitoso")
-      
+
+      window.location.href = "http://localhost:3001";
+
       
     } catch (error) {
       alert("no se pudo iniciar sesion")
-      
-
-      
     }
   }
 
@@ -39,7 +38,10 @@ export default function Login() {
         
 
         <div className ="botoneslogin">
+          <Link to='/'>
           <button type="submit"  onClick ={login}>Iniciar Sesión  </button>
+          </Link>
+
           <Link to='/register'>
             <button type="submit">Crear cuenta </button>
           
